@@ -1,0 +1,17 @@
+asgiref==3.6.0
+distlib==0.3.6
+dj-database-url==2.0.0
+Django==4.2.1
+django-heroku==0.3.1
+filelock==3.12.0
+gunicorn==20.1.0
+numpy==1.24.3
+pdfkit==1.0.0
+platformdirs==3.5.0
+psycopg2==2.9.6
+pytz==2023.3
+sqlparse==0.4.4
+typing_extensions==4.5.0
+tzdata==2023.3
+virtualenv==20.23.0
+whitenoise==6.4.0

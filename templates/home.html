@@ -1,0 +1,80 @@
+{% extends 'base_template.html' %}
+
+
+{% load static  %}
+{% block titre %} Page d'Accueil  {% endblock %}
+
+{% block titre2 %} <link rel="stylesheet" href="{% static 'list.css' %}"> {% endblock %}
+
+{% block contenu %}
+
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .text {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .image {
+        width: 100%;
+        position: relative;
+    }
+
+    .zoom {
+        position: absolute;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .image:hover .zoom {
+        display: block;
+    }
+    </style>
+<header>
+    <h1>Hey I’m an electrical and computer engineering engineer</h1>
+        <div class="test">
+        <img src="{% static 'image1.jpg' %}" alt="Image">
+        <p>Christophe Ellis</p>
+        </div>
+</header>
+
+<section>
+	<div class="container">
+		<div class="text">
+			<h2>Modern electrical engineering</h2>
+			<p>Modern electrical engineering is an ever-changing field that involves the design, development and maintenance of complex electrical systems. 
+                It encompasses a wide variety of fields, such as electronics, electrical power, communication, automation, robotics and much more. </p>
+			<p>These modern electrical systems have applications in many industry, including transportation, telecommunications, renewable energy and IT. 
+                Modern electrical engineering plays a crucial role in the development of our society</p>
+            <br>
+		</div>
+        
+        <div class="image-container1">
+            <img src="{% static 'electonique.jpg' %}" alt="image 1">
+            <img src="{% static 'energie_renouvellable.jpg' %}" alt="image 2">
+            <img src="{% static 'code-informatique.jpg' %}" alt="image 3">
+		</div>
+   
+	</div>
+</section> 
+   
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+<footer>
+    <p>©Christophe Ellis 2023</p>
+
+</footer>
+ {% endblock %}

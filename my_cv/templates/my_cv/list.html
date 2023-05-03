@@ -1,0 +1,231 @@
+{% extends 'base_template.html' %}
+
+{% load static  %}
+{% block titre %} Page d'Accueil  {% endblock %}
+
+{% block titre2 %} <link rel="stylesheet" href="{% static 'list.css' %}"> {% endblock %}
+
+
+
+
+{% block contenu %}
+
+    <header>
+        <h1>CV of Christophe Ellis</h1>
+    </header>
+    
+    <section>
+        <div class="photo">
+            <img src="{% static 'Image1.jpg' %}" alt="Ma photo de profil">
+        </div>
+        <div class="prez">
+            <h2>Who am I ?</h2>
+            <p>Currently in the final year of engineering school at INSA Lyon in electrical engineering, I turn to the field of research and development in the field of electrical engineering.</p>
+            <a href="{% static 'CV_Christophe_Ellis_anglais_2.pdf'%}" download>Download my resume</a>
+        </div>
+        <div class="contact">
+            <h2>Contact details</h2>
+            <div class="contact-flex">
+                <p>Name : </p>
+                <p>ELLIS CHRISTOPHE</p>
+            </div>
+            <div class="contact-flex">
+                <p>Address : </p>
+                <p>10 Av Ernest Millet-83400 Hyères</p>
+            </div>
+            <div class="contact-flex">
+                <p>Phone :</p>
+                <p>06 73 17 79 34</p>
+            </div>
+            <div class="contact-flex">
+                <p>Mail : </p>
+                <p><a href="mailto:christophe.ellis@insa-lyon.fr">christophe.ellis@insa-lyon.fr</a></p>
+            </div>
+            <div class="contact-flex">
+                <p>Driving license :</p>
+                <p>B</p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/tw.png" alt="Logo Tw"></a>
+                <a href="https://www.linkedin.com/in/christophe-ellis/"><img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/lk.png" alt="Logo Lk"></a>
+                <a href="#"><img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/yt.png" alt="Logo Yt"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Professional experiences</h2>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="https://www.cnr.tm.fr/"><img src="{% static 'cnr.png' %}" alt="Logo de la CNR"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Engineering Apprentice at the CNR (Compagnie nationale du Rhône) </h3>
+                <h4>CNR</h4>
+                <h4>September 2020 - Present</h4>
+            </div>
+            <div class="exp-desc">
+                <p>Development of a complete turbine-generator simulator to integrate the part concerning the speed regulation of a turbine and the part concerning the voltage regulation of the generator. This project will analyse the functioning of the communication interfaces, identify the modifications to be made and install the new hardware and software on the simulator.</p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="https://eutechengineers.com/"><img src="{% static 'Eutech_logo_png.png' %}" alt="Logo de eutechingeneer"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Two Month Internship in Roma</h3>
+                <h4>EUTech engineers</h4>
+                <h4>May 2023 - July 2023</h4>
+            </div>
+            <div class="exp-desc">
+                <p>Write reports about Artificial Neural Networks, Convolutional Neural Networks, Machine learning for object detection, image segmentation using machine learning algorithms and Unet.
+                   It also includes a practical part that is about coding in python about Unet, training and testing.
+                   This allows analysis of machine learning algorithms.
+                </p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="https://www.ifremer.fr/fr"><img src="{% static 'Ifremer.svg.png' %}" alt="Logo du CNRS"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Three Month Internship</h3>
+                <h4>Ifremer</h4>
+                <h4>April 2020 - July 2020</h4>
+            </div>
+            <div class="exp-desc">
+                <p>Analysis and study of the various barge technologies and feeding systems for a Soumarin robot called "glider". The purpose of this robot is to retrieve scientific data from each ocean.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="{% static 'insa.png' %}" alt="Logo INSA LYON"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Electrical Engineer Diploma </h3>
+                <h4>INSA de LYON</h4>
+                <h4>2020 - 2023</h4>
+            </div>
+            <div class="exp-desc">
+                <p> Electrical department, INSA de Lyon.
+                    Skills : Automatic, Automation, Signal processing, Electronics, Electrical engineering, Industrial computing, Telecommunications.
+                    Option : Control of converters and actuators 
+                    Modelling, simulation, control and experimentation of electrical/mechanical systems
+                </p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="{% static 'images.jpg' %}" alt="Logo IUT GEII TOULON"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Two-Year university degree in Electrical engineering and Industrial computing</h3>
+                <h4>2018 - 2020</h4>
+            </div>
+            <div class="exp-desc">
+                <p>University degree in Electrical engineering and Industrial computing, Robotic Option, University of Toulon, IUT.</p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href=""><img src="{% static 'logo-1.jpg' %}" alt="Logo Lycee"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Sientific high school diploma, mathematical option </h3>
+                <h4>2018</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Areas of Expertise</h2>
+        <h3 class="h3gauche">Professional</h3><br>
+        
+        <h4 class="h4gauche">Tools and Software :</h4>
+        <div class="comp">
+            <p>Mathlab / Simulink</p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p>Dewesoft / testUniverse</p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p>LTspice / Kikad</p>
+            <div class="conteneur-barre"><span class="barre c80"></span></div>
+        </div>
+        <div class="comp">
+            <p>Ecostruxure Schneider </p>
+            <div class="conteneur-barre"><span class="barre c85"></span></div>
+        </div>
+
+        <h4 class="h4gauche">Computer Languages  :</h4>
+        <div class="comp">
+            <p>C / C++</p>
+            <div class="conteneur-barre"><span class="barre c80"></span></div>
+        </div>
+        <div class="comp">
+            <p> C# </p>
+            <div class="conteneur-barre"><span class="barre c50"></span></div>
+        </div>
+        <div class="comp">
+             <p> Python </p>
+            <div class="conteneur-barre"><span class="barre c75"></span></div>
+         </div>
+         <div class="comp">
+             <p> VHDL </p>
+            <div class="conteneur-barre"><span class="barre c80"></span></div>
+        </div>
+   
+     
+     
+        <h3 class="h3gauche">Personal</h3>
+        <div class="comp2">
+            <p>Creativity</p>
+            <p>80%</p>
+            <div class="conteneur-barre2"><span class="barre c90"></span></div>
+        </div>
+        <div class="comp2">
+            <p>Adaptation</p>
+            <p>85%</p>
+            <div class="conteneur-barre2"><span class="barre c85"></span></div>
+        </div>
+        <div class="comp2">
+            <p>Serious</p>
+            <p>98%</p>
+            <div class="conteneur-barre2"><span class="barre c95"></span></div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Areas of interest</h2>
+        <figure class="interet">
+            <img src="{% static 'tenis.jpg' %}" alt="Tenis">
+            <figcaption>Tenis</figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="{% static 'electonique.jpg' %}" alt="Electronique">
+            <figcaption>Electronic</figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/gaming.jpg" alt="Gaming">
+            <figcaption>Gaming</figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="{% static 'voyage.jpg' %}" alt="Voyage">
+            <figcaption>Trips</figcaption>
+        </figure>
+    </section>
+    
+    <footer>
+        <p>©Christophe Ellis 2023</p>
+
+    </footer>
+
+{% endblock %}

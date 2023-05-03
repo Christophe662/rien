@@ -1,0 +1,51 @@
+{% extends 'base_template.html' %}
+
+{% load static  %}
+{% block titre %} Page d'Accueil  {% endblock %}
+
+{% block titre2 %} <link rel="stylesheet" href="{% static 'list.css' %}"> {% endblock %}
+
+
+{% block contenu %}
+<header>
+    <h1>My Projects</h1>
+    <div class="test">
+        <img src="{% static 'image1.jpg' %}" alt="Image">
+        <p>Christophe Ellis</p>
+        </div>
+</header>
+
+<section>
+	<div class="Projet1">
+		<div class="text">
+			<h2>Simulator project at CNR</h2>
+			<p>Modern electrical engineering is an ever-changing field that involves the design, development and maintenance of complex electrical systems. 
+                It encompasses a wide variety of fields, such as electronics, electrical power, communication, automation, robotics and much more. </p>
+			<p>These modern electrical systems have applications in many industry, including transportation, telecommunications, renewable energy and IT. 
+                Modern electrical engineering plays a crucial role in the development of our society</p>
+            <br>
+		</div>
+
+        <div class="Projet2">
+            <div class="text">
+                <h2>Robotic project</h2>
+                <p>Modern electrical engineering is an ever-changing field that involves the design, development and maintenance of complex electrical systems. 
+                    It encompasses a wide variety of fields, such as electronics, electrical power, communication, automation, robotics and much more. </p>
+                <p>These modern electrical systems have applications in many industry, including transportation, telecommunications, renewable energy and IT. 
+                    Modern electrical engineering plays a crucial role in the development of our society</p>
+                <br>
+            </div>
+
+	</div>
+</section> 
+   
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    
+<footer>
+    <p>©Christophe Ellis 2023</p>
+</footer>
+ {% endblock %}

@@ -1,0 +1,31 @@
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title> {% block titre %} {% endblock %}</title>
+             {% block titre2 %}   {% endblock %}
+    <!--<link rel="stylesheet" href="static/list.css"> -->
+
+</head>
+<body>
+    <center> 
+    <u1 style="list-style: none;">
+        <li style="display: inline-block; padding: 10px 10px;">  
+            <!-- Changement -->
+            <a href="{% url 'home' %}"> Home </a>
+        </li>
+
+        <li style="display: inline-block; padding: 10px 10px;">  
+            <a href="{% url 'my_cv' %}"> My_cv </a>
+        </li>
+
+        <li style="display: inline-block; padding: 10px 10px;">  
+            <a href="{% url 'projects' %}"> My Projects </a>
+        </li>
+    </u1>
+    </center>
+    {% block contenu %} {% endblock %}
+</body>
+</html>
